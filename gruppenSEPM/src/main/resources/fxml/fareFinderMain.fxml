@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" id="rootFare" fx:id="root" prefHeight="600.0" prefWidth="460.0" stylesheets="@/style/sepm.css" xmlns="http://javafx.com/javafx/8.0.121" fx:controller="at.ac.tuwien.sepm.assignment.groupphase.buscompany.ui.booking.FareFinderMainController">
+    <top>
+        <VBox alignment="CENTER" spacing="20" style="-fx-background-color: #173937;">
+            <Label text="Fares for trip:" textFill="white">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font></Label>
+            <Label fx:id="lblCity" textFill="white">
+            <font>
+               <Font size="18.0" />
+            </font></Label>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+        </VBox>
+    </top>
+    <center>
+      <ListView fx:id="listView" />
+  </center>
+
+</BorderPane>

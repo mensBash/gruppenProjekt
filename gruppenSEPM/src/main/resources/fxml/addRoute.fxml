@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="anchorPane" prefHeight="723.0" prefWidth="907.0"
+            style="-fx-background-color: #fcfcfc;" xmlns="http://javafx.com/javafx/8.0.121"
+            fx:controller="at.ac.tuwien.sepm.assignment.groupphase.buscompany.ui.route.AddRouteController">
+    <Label layoutX="581.0" layoutY="41.0" text="New bus route">
+        <font>
+            <Font name="System Bold" size="17.0"/>
+        </font>
+    </Label>
+    <Label layoutX="409.0" layoutY="164.0" text="*Bus number">
+        <font>
+            <Font size="13.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="fieldBusNr" layoutX="411.0" layoutY="194.0" prefHeight="26.0" prefWidth="187.0"/>
+    <Label layoutX="411.0" layoutY="256.0" text="*From">
+        <font>
+            <Font size="13.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="fieldStartDestCity" layoutX="411.0" layoutY="284.0" prefHeight="26.0" prefWidth="187.0"
+               promptText="City"/>
+    <TextField fx:id="fieldStartDestCountry" layoutX="605.0" layoutY="284.0" prefWidth="187.0" promptText="Country"/>
+    <Label layoutX="411.0" layoutY="352.0" text="*To">
+        <font>
+            <Font size="13.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="fieldEndDestCity" layoutX="411.0" layoutY="379.0" prefHeight="26.0" prefWidth="187.0"
+               promptText="City"/>
+    <TextField fx:id="fieldEndDestCountry" layoutX="605.0" layoutY="379.0" prefWidth="187.0" promptText="Country"/>
+    <Label layoutX="412.0" layoutY="449.0" text="*Distance">
+        <font>
+            <Font size="13.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="fieldDistance" alignment="BOTTOM_LEFT" layoutX="411.0" layoutY="473.0" prefHeight="26.0"
+               prefWidth="187.0" promptText="                                               km"/>
+    <Button id="button1" fx:id="nextButton" disable="true" layoutX="699.0" layoutY="650.0" mnemonicParsing="false"
+            onAction="#onClick" prefHeight="40.0" prefWidth="157.0" stylesheets="@/style/sepm.css" text="Next"
+            AnchorPane.rightAnchor="50.400000000000006"/>
+    <Button id="button1" fx:id="cancelButton" layoutX="519.0" layoutY="650.0" mnemonicParsing="false"
+            onAction="#clickedCancelButton" prefHeight="40.0" prefWidth="157.0" stylesheets="@/style/sepm.css"
+            text="Cancel" AnchorPane.bottomAnchor="33.200000000000045" AnchorPane.rightAnchor="230.4"
+            AnchorPane.topAnchor="650.0"/>
+    <Pane prefHeight="723.0" prefWidth="342.0" style="-fx-background-color: #173937;">
+        <ImageView fx:id="imageIcon" fitHeight="40.0" fitWidth="46.0" layoutX="142.0" layoutY="142.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+        <Label layoutX="54.0" layoutY="240.0" prefHeight="51.0" prefWidth="250.0"
+               text="Please make sure to fill all obligatory fields (*) " textFill="WHITE"/>
+        <Label layoutX="54.0" layoutY="290.0" prefHeight="51.0" prefWidth="250.0"
+               text="Please make sure to input valid information" textFill="WHITE"/>
+        <Label layoutX="54.0" layoutY="340.0" prefHeight="51.0" prefWidth="250.0"
+               text="Stored routes can be accessed and modified  " textFill="WHITE"/>
+        <ImageView fx:id="imageLogo" fitHeight="300.0" fitWidth="300.0" layoutX="21.0" layoutY="391.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+    </Pane>
+</AnchorPane>

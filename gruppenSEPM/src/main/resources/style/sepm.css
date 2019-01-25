@@ -1,0 +1,199 @@
+#button1, #button3{
+    -fx-background-color: ffffff;
+    -fx-border-style: solid;
+    -fx-border-color:efaa21;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: efaa21;
+    -fx-font-weight: bold;
+    -fx-font-size: 13 px;
+    -fx-padding: 5 10 5 10;
+}
+#button_selected{
+    -fx-background-color: efaa21;
+    -fx-border-style: solid;
+    -fx-border-color:efaa21;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13 px;
+    -fx-padding: 5 10 5 10;
+}
+
+
+#button1:hover{
+    -fx-background-color: efaa21;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13 px;
+    -fx-padding: 5 10 5 10;
+}
+#exit_button {
+    -fx-background-color: b2b2b2;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13 px;
+    -fx-padding: 5 10 5 10;
+}
+
+.city{
+ -fx-background-color: ffffff;
+    -fx-border-style: solid;
+    -fx-border-color:efaa21;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-font-weight: bold;
+    -fx-font-size: 13 px;
+    -fx-text-fill: efaa21;
+    -fx-padding: 5 10 5 10;
+}
+#exit_button:hover{
+    -fx-background-color: efaa21;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13 px;
+    -fx-padding: 5 10 5 10;
+}
+#hbox:hover{
+     -fx-background-color: b2b2b2;
+}
+#button3:selected{
+    -fx-background-color: efaa21;
+    -fx-text-fill: ffffff;
+}
+
+
+
+
+
+.fareButton{
+    -fx-background-color: efaa21;
+    -fx-border-width: 0px;
+    -fx-border-radius: 0;
+    -fx-background-radius: 20;
+    -fx-text-fill: ffffff;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.5em; /* 12 */
+    -fx-padding: 5 10 5 10;
+    -fx-margin: 0 0 0 40;
+     -fx-alignment: center ;
+    -fx-min-height: 45px;
+    -fx-min-width : 115px;
+}
+
+.fareButton:hover{
+    -fx-background-color: ffffff;
+    -fx-text-fill: efaa21;
+
+}
+.fareButton:pressed{
+    -fx-opacity:0.6
+}
+
+
+.destinationLabel{
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 1em;
+    -fx-text-fill: #000;
+    -fx-min-width:100;
+    -fx-min-height:25;
+}
+#fareList{
+-fx-background-color:transparent;
+-fx-text-fill: black;
+-fx-font-size: 1.5em;
+}
+#fareList .list-cell:even {
+-fx-background-color: transparent;
+-fx-text-fill: black;
+}
+#fareList .list-cell:odd {
+-fx-background-color: transparent;
+-fx-text-fill: black;
+}
+
+.lvLbl{
+-fx-background-color: transparent;
+-fx-text-fill: black;
+}
+#fareSelect{
+-fx-background-color: transparent;
+-fx-text-fill:black;
+-fx-padding:0 0 10 0;
+}
+#fareSelect:hover{
+-fx-text-fill:efaa21;
+}
+.box{
+    -fx-border-style: solid;
+    -fx-border-color:efaa21;
+    -fx-border-width: 4px;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5 10 5 10;
+}
+
+.axis {
+    -fx-font-size: 1.4em;
+    -fx-tick-label-fill: black;
+    -fx-font-family: Tahoma;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+
+.axis-label {
+   -fx-text-fill: black;
+}
+
+#round-box1{
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    -fx-border-width: 2px;
+    -fx-border-color: #ffd90c;
+}
+
+#progress1{
+-fx-progress-color: #ffd90c;
+}
+
+
+#round-box2{
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    -fx-border-width: 2px;
+    -fx-border-color: #ffffff;
+}
+
+#progress2{
+-fx-progress-color: #ffffff;
+}
+
+#round-box3{
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    -fx-border-width: 2px;
+    -fx-border-color: #1aa87d;
+}
+
+#progress3{
+-fx-progress-color: #1aa87d;
+}
+
+
+
+

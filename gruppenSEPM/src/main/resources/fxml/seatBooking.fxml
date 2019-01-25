@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="636.0" prefWidth="886.0"
+            xmlns="http://javafx.com/javafx/9.0.1"
+            fx:controller="at.ac.tuwien.sepm.assignment.groupphase.buscompany.ui.booking.SeatController">
+    <Pane prefHeight="170.0" prefWidth="886.0" style="-fx-background-color: #173937;">
+        <Label layoutX="384.0" layoutY="44.0" prefHeight="31.0" prefWidth="122.0" text="Choose seat"
+               textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="21.0"/>
+            </font>
+        </Label>
+        <Label layoutX="540.0" layoutY="119.0" text="Route:" textFill="WHITE">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="668.0" layoutY="124.0"/>
+        <HBox layoutX="606.0" layoutY="110.0" prefHeight="40.0" prefWidth="200.0">
+            <Label fx:id="startLabel" text="Start" textFill="#ffffff">
+                <HBox.margin>
+                    <Insets top="8.0"/>
+                </HBox.margin>
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <Label text="-" textFill="WHITE">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+                <HBox.margin>
+                    <Insets left="10.0" right="10.0" top="8.0"/>
+                </HBox.margin>
+            </Label>
+            <Label fx:id="endLabel" text="End" textFill="WHITE">
+                <HBox.margin>
+                    <Insets top="8.0"/>
+                </HBox.margin>
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+        </HBox>
+        <HBox layoutX="111.0" layoutY="113.0" prefHeight="40.0" prefWidth="257.0">
+            <Label text="Please select " textFill="WHITE">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+                <HBox.margin>
+                    <Insets top="7.0"/>
+                </HBox.margin>
+            </Label>
+            <Label fx:id="numberLabel" text="5" textFill="WHITE">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+                <HBox.margin>
+                    <Insets left="5.0" top="7.0"/>
+                </HBox.margin>
+            </Label>
+            <Label text="seat(s)." textFill="WHITE">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+                <HBox.margin>
+                    <Insets left="10.0" top="7.0"/>
+                </HBox.margin>
+            </Label>
+        </HBox>
+    </Pane>
+    <Rectangle fx:id="s1" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="123.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s3" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="123.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s2" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="123.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s4" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="123.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s5" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="169.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s7" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="169.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s6" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="169.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s8" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="169.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s9" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="216.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s11" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="216.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s10" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="216.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s12" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="216.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s13" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="262.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s15" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="262.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s14" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="262.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s16" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="262.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s17" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="308.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s19" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="308.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s18" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="308.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s20" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="308.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s21" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="354.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s23" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="354.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s22" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="354.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s24" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="354.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s25" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="401.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s52" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="726.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"
+               AnchorPane.topAnchor="319.0"/>
+    <Rectangle fx:id="s26" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="401.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s53" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="726.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"
+               AnchorPane.topAnchor="275.0"/>
+    <Rectangle fx:id="s27" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="447.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s49" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="726.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"
+               AnchorPane.topAnchor="454.0"/>
+    <Rectangle fx:id="s28" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="447.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s50" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="726.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"
+               AnchorPane.topAnchor="410.0"/>
+    <Rectangle fx:id="s29" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="495.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s31" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="495.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s30" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="495.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s32" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="495.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s33" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="541.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s35" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="541.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s34" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="541.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s36" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="541.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s37" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="588.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s39" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="588.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s38" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="588.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s40" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="588.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s41" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="634.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s43" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="634.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s42" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="634.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s44" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="634.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Rectangle fx:id="s45" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="680.0" layoutY="454.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"
+               AnchorPane.topAnchor="454.0"/>
+    <Rectangle fx:id="s48" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="680.0" layoutY="275.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"
+               AnchorPane.topAnchor="275.0"/>
+    <Rectangle fx:id="s46" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="680.0" layoutY="410.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"
+               AnchorPane.topAnchor="410.0"/>
+    <Rectangle fx:id="s47" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="680.0" layoutY="319.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"
+               AnchorPane.topAnchor="319.0"/>
+    <Rectangle fx:id="s51" arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="37.0" layoutX="726.0" layoutY="365.0"
+               onMouseClicked="#seatClick" stroke="BLACK" strokeType="INSIDE" width="37.0"/>
+    <Label layoutX="138.0" layoutY="463.0" mouseTransparent="true" text="1" textFill="WHITE"/>
+    <Arc fill="#617a84" layoutX="431.0" layoutY="314.0" length="270.0" radiusX="35.0" radiusY="38.0" startAngle="45.0"
+         stroke="BLACK" strokeType="INSIDE" type="ROUND" AnchorPane.leftAnchor="396.0" AnchorPane.topAnchor="276.0"/>
+    <Ellipse fill="#617a84" layoutX="473.0" layoutY="339.0" radiusX="14.0" radiusY="4.0" stroke="BLACK"
+             strokeType="INSIDE" AnchorPane.bottomAnchor="330.0" AnchorPane.rightAnchor="399.4"
+             AnchorPane.topAnchor="335.0"/>
+    <Ellipse fill="#617a84" layoutX="473.0" layoutY="348.0" radiusX="18.0" radiusY="4.0" stroke="BLACK"
+             strokeType="INSIDE" AnchorPane.rightAnchor="395.4"/>
+    <Ellipse fill="#617a84" layoutX="473.0" layoutY="330.0" radiusX="10.0" radiusY="4.0" stroke="BLACK"
+             strokeType="INSIDE" AnchorPane.topAnchor="326.0"/>
+    <Label layoutX="401.0" layoutY="308.0" text="WC" textFill="#f0ecec"/>
+    <Label layoutX="138.0" layoutY="420.0" mouseTransparent="true" text="2" textFill="WHITE"/>
+    <Label layoutX="138.0" layoutY="329.0" mouseTransparent="true" text="3" textFill="WHITE"/>
+    <Label layoutX="138.0" layoutY="285.0" mouseTransparent="true" text="4" textFill="WHITE"/>
+    <Label layoutX="183.0" layoutY="464.0" mouseTransparent="true" text="5" textFill="WHITE"/>
+    <Label layoutX="184.0" layoutY="420.0" mouseTransparent="true" text="6" textFill="WHITE"/>
+    <Label layoutX="184.0" layoutY="329.0" mouseTransparent="true" text="7" textFill="WHITE"/>
+    <Label layoutX="184.0" layoutY="285.0" mouseTransparent="true" text="8" textFill="WHITE"/>
+    <Label layoutX="231.0" layoutY="465.0" mouseTransparent="true" text="9" textFill="WHITE"/>
+    <Label layoutX="227.0" layoutY="420.0" mouseTransparent="true" text="10" textFill="WHITE"/>
+    <Label layoutX="228.0" layoutY="285.0" mouseTransparent="true" text="12" textFill="WHITE"/>
+    <Label layoutX="228.0" layoutY="330.0" mouseTransparent="true" text="11" textFill="WHITE"/>
+    <Label layoutX="274.0" layoutY="465.0" mouseTransparent="true" text="13" textFill="WHITE"/>
+    <Label layoutX="273.0" layoutY="420.0" mouseTransparent="true" text="14" textFill="WHITE"/>
+    <Label layoutX="274.0" layoutY="330.0" mouseTransparent="true" text="15" textFill="WHITE"/>
+    <Label layoutX="273.0" layoutY="285.0" mouseTransparent="true" text="16" textAlignment="CENTER" textFill="WHITE"/>
+    <Label layoutX="320.0" layoutY="463.0" mouseTransparent="true" text="17" textFill="WHITE"/>
+    <Label layoutX="320.0" layoutY="420.0" mouseTransparent="true" text="18" textFill="WHITE"/>
+    <Label layoutX="320.0" layoutY="329.0" mouseTransparent="true" text="19" textFill="WHITE"/>
+    <Label layoutX="320.0" layoutY="285.0" mouseTransparent="true" text="20" textFill="WHITE"/>
+    <Label layoutX="366.0" layoutY="464.0" mouseTransparent="true" text="21" textFill="WHITE"/>
+    <Label layoutX="366.0" layoutY="285.0" mouseTransparent="true" text="24" textFill="WHITE"/>
+    <Label layoutX="366.0" layoutY="329.0" mouseTransparent="true" text="23" textFill="WHITE"/>
+    <Label layoutX="366.0" layoutY="420.0" mouseTransparent="true" text="22" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="507.0" layoutY="420.0" mouseTransparent="true"
+           text="30" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="507.0" layoutY="465.0" mouseTransparent="true"
+           text="29" textAlignment="CENTER" textFill="WHITE"/>
+    <Label layoutX="459.0" layoutY="420.0" mouseTransparent="true" text="28" textFill="WHITE"/>
+    <Label layoutX="459.0" layoutY="464.0" mouseTransparent="true" text="27" textFill="WHITE"/>
+    <Label layoutX="413.0" layoutY="420.0" mouseTransparent="true" text="26" textFill="WHITE"/>
+    <Label layoutX="413.0" layoutY="463.0" mouseTransparent="true" text="25" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="600.0" layoutY="329.0" mouseTransparent="true"
+           text="39" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="600.0" layoutY="420.0" mouseTransparent="true"
+           text="38" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="600.0" layoutY="465.0" mouseTransparent="true"
+           text="37" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="552.0" layoutY="285.0" mouseTransparent="true"
+           text="36" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="553.0" layoutY="329.0" mouseTransparent="true"
+           text="35" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="553.0" layoutY="420.0" mouseTransparent="true"
+           text="34" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="553.0" layoutY="465.0" mouseTransparent="true"
+           text="33" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="507.0" layoutY="285.0" mouseTransparent="true"
+           text="32" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="507.0" layoutY="329.0" mouseTransparent="true"
+           text="31" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="646.0" layoutY="329.0" mouseTransparent="true"
+           text="43" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="646.0" layoutY="420.0" mouseTransparent="true"
+           text="42" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="646.0" layoutY="465.0" mouseTransparent="true"
+           text="41" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="600.0" layoutY="285.0" mouseTransparent="true"
+           text="40" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="692.0" layoutY="285.0" mouseTransparent="true"
+           text="48" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="692.0" layoutY="330.0" mouseTransparent="true"
+           text="47" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="692.0" layoutY="420.0" mouseTransparent="true"
+           text="46" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="692.0" layoutY="465.0" mouseTransparent="true"
+           text="45" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="646.0" layoutY="285.0" mouseTransparent="true"
+           text="44" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="738.0" layoutY="330.0" mouseTransparent="true"
+           text="52" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="738.0" layoutY="375.0" mouseTransparent="true"
+           text="51" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="738.0" layoutY="420.0" mouseTransparent="true"
+           text="50" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="738.0" layoutY="465.0" mouseTransparent="true"
+           text="49" textAlignment="CENTER" textFill="WHITE"/>
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="738.0" layoutY="285.0" mouseTransparent="true"
+           text="53" textAlignment="CENTER" textFill="WHITE"/>
+    <Label layoutX="42.0" layoutY="563.0" text="Legend: ">
+        <font>
+          <Font size="14.0"/>
+        </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#617a84" height="30.0" layoutX="42.0" layoutY="592.0" stroke="BLACK"
+               strokeType="INSIDE" width="30.0"/>
+    <Label layoutX="81.0" layoutY="599.0" text="Available"/>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="30.0" layoutX="154.0" layoutY="593.0" stroke="BLACK"
+               strokeType="INSIDE" width="30.0"/>
+    <Label layoutX="192.0" layoutY="598.0" text="Not available"/>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="30.0" layoutX="284.0" layoutY="592.0" stroke="BLACK"
+               strokeType="INSIDE" width="30.0"/>
+    <Label layoutX="323.0" layoutY="598.0" text="Selected"/>
+    <Button id="button1" fx:id="cancelButton" layoutX="505.0" layoutY="586.0" mnemonicParsing="false"
+            onAction="#clickedCancelButton" prefHeight="40.0" prefWidth="146.0" stylesheets="@/style/sepm.css"
+            text="Cancel"/>
+    <Button id="button1" fx:id="saveButton" layoutX="665.0" layoutY="586.0" mnemonicParsing="false"
+            onAction="#clickedSaveButton" prefHeight="40.0" prefWidth="146.0" stylesheets="@/style/sepm.css"
+            text="Save"/>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane" fx:id="pane" prefHeight="750.0" prefWidth="742.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.tuwien.sepm.assignment.groupphase.buscompany.ui.navigation.BookingPaneController">
+    <TableView fx:id="activeBookings" layoutX="89.0" layoutY="142.0" onMouseClicked="#onTableClicked" prefHeight="427.0" prefWidth="564.0">
+      <columns>
+          <TableColumn fx:id="bookingNr" prefWidth="167.0" text="Booking Number" />
+          <TableColumn fx:id="status" editable="false" prefWidth="112.0" text="Status" />
+          <TableColumn fx:id="totalSum" editable="false" prefWidth="118.0" text="Total sum" />
+          <TableColumn fx:id="timeOfBooking" editable="false" prefWidth="165.0" text="Time of booking" />
+      </columns>
+    </TableView>
+    <Label layoutX="89.0" layoutY="41.0" text="Active bookings">
+        <font>
+          <Font name="System Bold" size="17.0" />
+        </font>
+    </Label>
+    <Button id="button1" fx:id="newBookingButton" layoutX="371.0" layoutY="599.0" mnemonicParsing="false" onAction="#onNewBooking" prefHeight="43.0" prefWidth="138.0" stylesheets="@/style/sepm.css" text="New booking" />
+    <Button id="button1" fx:id="cancelButton" layoutX="517.0" layoutY="599.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="43.0" prefWidth="136.0" stylesheets="@/style/sepm.css" text="Cancel booking" />
+    <Button id="button1" fx:id="blindBookingButton" layoutX="84.0" layoutY="599.0" mnemonicParsing="false" onAction="#onBlindBookingClicked" prefHeight="43.0" prefWidth="138.0" stylesheets="@/style/sepm.css" text="Blind booking" />
+   <Label layoutX="89.0" layoutY="90.0" text="Booking number:">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Label>
+   <TextField fx:id="tfbookingNr" layoutX="203.0" layoutY="85.0" prefHeight="30.0" prefWidth="144.0" />
+   <Button id="button1" layoutX="371.0" layoutY="83.0" mnemonicParsing="false" onAction="#onSearch" prefHeight="35.0" prefWidth="102.0" stylesheets="@/style/sepm.css" text="Search" />
+
+   </AnchorPane>

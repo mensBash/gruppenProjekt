@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="516.0" prefWidth="702.0"
+            xmlns="http://javafx.com/javafx/9.0.1"
+            fx:controller="at.ac.tuwien.sepm.assignment.groupphase.buscompany.ui.booking.ModifyBlindBookingController">
+    <Label layoutX="52.0" layoutY="138.0" text="City 1:"/>
+    <TextField fx:id="city1" layoutX="101.0" layoutY="134.0"/>
+    <TextField fx:id="image1" editable="false" layoutX="383.0" layoutY="134.0" prefHeight="26.0" prefWidth="206.0"/>
+    <Label layoutX="335.0" layoutY="138.0" text="Image:"/>
+    <Label layoutX="52.0" layoutY="183.0" text="City 2:"/>
+    <TextField fx:id="city2" layoutX="101.0" layoutY="179.0"/>
+    <TextField fx:id="image2" editable="false" layoutX="383.0" layoutY="179.0" prefHeight="26.0" prefWidth="206.0"/>
+    <Label layoutX="335.0" layoutY="183.0" text="Image:"/>
+    <Label layoutX="52.0" layoutY="226.0" text="City 3:"/>
+    <TextField fx:id="city3" layoutX="101.0" layoutY="222.0"/>
+    <TextField fx:id="image3" editable="false" layoutX="383.0" layoutY="222.0" prefHeight="26.0" prefWidth="206.0"/>
+    <Label layoutX="335.0" layoutY="226.0" text="Image:"/>
+    <Label layoutX="52.0" layoutY="270.0" text="City 4:"/>
+    <TextField fx:id="city4" layoutX="101.0" layoutY="266.0"/>
+    <TextField fx:id="image4" editable="false" layoutX="383.0" layoutY="266.0" prefHeight="26.0" prefWidth="206.0"/>
+    <Label layoutX="335.0" layoutY="270.0" text="Image:"/>
+    <Label layoutX="52.0" layoutY="316.0" text="City 5:"/>
+    <TextField fx:id="city5" layoutX="101.0" layoutY="312.0"/>
+    <TextField fx:id="image5" editable="false" layoutX="383.0" layoutY="312.0" prefHeight="26.0" prefWidth="206.0"/>
+    <Label layoutX="335.0" layoutY="316.0" text="Image:"/>
+    <Label layoutX="52.0" layoutY="359.0" text="City 6:"/>
+    <TextField fx:id="city6" layoutX="101.0" layoutY="355.0"/>
+    <TextField fx:id="image6" editable="false" layoutX="383.0" layoutY="355.0" prefHeight="26.0" prefWidth="206.0"/>
+    <Label layoutX="335.0" layoutY="359.0" text="Image:"/>
+    <Button id="button1" fx:id="browse1" accessibleText="browse1" layoutX="603.0" layoutY="130.0"
+            mnemonicParsing="false" onAction="#onBrowseClicked" stylesheets="@/style/sepm.css" text="Browse.."/>
+    <Button id="button1" fx:id="browse3" accessibleText="browse3" layoutX="603.0" layoutY="218.0"
+            mnemonicParsing="false" onAction="#onBrowseClicked" stylesheets="@/style/sepm.css" text="Browse.."/>
+    <Button id="button1" fx:id="browse2" accessibleText="browse2" layoutX="603.0" layoutY="175.0"
+            mnemonicParsing="false" onAction="#onBrowseClicked" stylesheets="@/style/sepm.css" text="Browse.."/>
+    <Button id="button1" fx:id="browse4" accessibleText="browse4" layoutX="603.0" layoutY="262.0"
+            mnemonicParsing="false" onAction="#onBrowseClicked" stylesheets="@/style/sepm.css" text="Browse.."/>
+    <Button id="button1" fx:id="browse5" accessibleText="browse5" layoutX="603.0" layoutY="308.0"
+            mnemonicParsing="false" onAction="#onBrowseClicked" stylesheets="@/style/sepm.css" text="Browse.."/>
+    <Button id="button1" fx:id="browse6" accessibleText="browse6" layoutX="603.0" layoutY="351.0"
+            mnemonicParsing="false" onAction="#onBrowseClicked" stylesheets="@/style/sepm.css" text="Browse.."/>
+    <Button id="button1" fx:id="cancelButton" layoutX="448.0" layoutY="463.0" mnemonicParsing="false"
+            onAction="#onCancelClicked" prefHeight="38.0" prefWidth="110.0" stylesheets="@/style/sepm.css"
+            text="Cancel"/>
+    <Button id="button1" layoutX="569.0" layoutY="463.0" mnemonicParsing="false" onAction="#onSaveClicked"
+            prefHeight="38.0" prefWidth="110.0" stylesheets="@/style/sepm.css" text="Save"/>
+    <Pane prefHeight="55.0" prefWidth="702.0" style="-fx-background-color: #173937;">
+        <Label layoutX="286.0" layoutY="11.0" text="Modify Cities" textFill="WHITE">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </Label>
+    </Pane>
+</AnchorPane>

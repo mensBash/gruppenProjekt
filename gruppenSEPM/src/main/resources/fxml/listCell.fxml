@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListCell?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root stylesheets="@/style/sepm.css" type="javafx.scene.control.ListCell" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <graphic>
+        <HBox fx:id="root" alignment="CENTER_LEFT" fillHeight="false" maxHeight="100.0" maxWidth="-Infinity"
+              minHeight="100.0" minWidth="-Infinity" prefHeight="100.0" prefWidth="800.0" spacing="10.0">
+            <padding>
+                <Insets left="10.0" right="10.0"/>
+            </padding>
+            <HBox fx:id="hbStart" alignment="CENTER" spacing="10.0">
+                <Label fx:id="startDep" text="08:00">
+                    <font>
+                        <Font size="10.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets top="3.0"/>
+                    </HBox.margin>
+                </Label>
+                <Label fx:id="startName" layoutX="86.0" layoutY="64.0" text="Vienna">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Label>
+            </HBox>
+            <VBox fx:id="vbStops" alignment="CENTER" spacing="20.0">
+                <HBox fx:id="hbFirstStop" alignment="CENTER" spacing="5.0">
+                    <Label fx:id="firstStopDep" text="09:00">
+                        <font>
+                            <Font size="10.0"/>
+                        </font>
+                        <HBox.margin>
+                            <Insets top="3.0"/>
+                        </HBox.margin>
+                    </Label>
+                    <Label fx:id="firstStopName" layoutX="86.0" layoutY="64.0" text="Prague">
+                        <font>
+                            <Font size="16.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="firstStopArr" layoutX="21.0" layoutY="17.0" text="09:05">
+                        <font>
+                            <Font size="10.0"/>
+                        </font>
+                        <padding>
+                            <Insets top="3.0"/>
+                        </padding>
+                    </Label>
+                </HBox>
+                <HBox fx:id="hbSecondStop" alignment="CENTER" layoutX="10.0" layoutY="64.0" spacing="5.0">
+                    <Label text="10:00">
+                        <font>
+                            <Font size="10.0"/>
+                        </font>
+                        <HBox.margin>
+                            <Insets top="3.0"/>
+                        </HBox.margin>
+                    </Label>
+                    <Label layoutX="86.0" layoutY="64.0" text="Dresden">
+                        <font>
+                            <Font size="16.0"/>
+                        </font>
+                    </Label>
+                    <Label layoutX="21.0" layoutY="17.0" text="10:05">
+                        <font>
+                            <Font size="10.0"/>
+                        </font>
+                        <HBox.margin>
+                            <Insets top="3.0"/>
+                        </HBox.margin>
+                    </Label>
+                </HBox>
+            </VBox>
+            <HBox fx:id="hbEnd" alignment="CENTER" layoutX="209.0" layoutY="10.0" spacing="5.0">
+                <Label fx:id="endArr" text="12:00">
+                    <font>
+                        <Font size="10.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets top="3.0"/>
+                    </HBox.margin>
+                </Label>
+                <Label fx:id="endName" layoutX="86.0" layoutY="64.0" text="Berlin">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Label>
+            </HBox>
+            <VBox alignment="CENTER">
+                <Label text="Duration"/>
+                <Label fx:id="lblDuration" layoutX="10.0" layoutY="10.0" text="4:15"/>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="494.0" layoutY="10.0">
+                <Label text="Price"/>
+                <Label fx:id="lblPrice" layoutX="10.0" layoutY="10.0" text="40"/>
+            </VBox>
+        </HBox>
+
+
+    </graphic>
+</fx:root>

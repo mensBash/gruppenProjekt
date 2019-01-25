@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.tuwien.sepm.assignment.groupphase.buscompany.ui.navigation.RoutePaneController">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="742.0" spacing="20.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER_LEFT">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <Label text="From:">
+                <HBox.margin>
+                    <Insets left="15.0" />
+                </HBox.margin>
+                <font>
+                    <Font size="13.0" />
+                </font></Label>
+            <TextField fx:id="tfFrom" prefHeight="30.0" prefWidth="100.0" />
+            <Label layoutX="10.0" layoutY="26.0" text="To:">
+                <font>
+                    <Font size="13.0" />
+                </font></Label>
+            <TextField fx:id="tfTo" layoutX="60.0" layoutY="22.0" prefHeight="30.0" prefWidth="100.0" />
+            <Button id="button1" mnemonicParsing="false" onAction="#onSearch" prefHeight="35.0" prefWidth="102.0" stylesheets="@/style/sepm.css" text="Search" />
+        </HBox>
+    </top>
+    <center>
+        <ListView fx:id="listView" onMouseClicked="#onTableClicked" prefHeight="634.0" prefWidth="742.0" BorderPane.alignment="CENTER" />
+    </center>
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="742.0" spacing="20.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER_LEFT">
+                <HBox.margin>
+                    <Insets left="15.0" />
+                </HBox.margin>
+                <Button id="button1" mnemonicParsing="false" onAction="#changeSceneAddRoute" prefHeight="35.0" prefWidth="102.0" stylesheets="@/style/sepm.css" text="Add route">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin></Button>
+                <Button id="button1" mnemonicParsing="false" onAction="#changeSceneModifyRoute" prefHeight="35.0" prefWidth="102.0" stylesheets="@/style/sepm.css" text="Modify" />
+                 <Button id="button1" mnemonicParsing="false" onAction="#deleteRoute" prefHeight="35.0" prefWidth="102.0" stylesheets="@/style/sepm.css" text="Delete" />
+         <padding>
+            <Insets right="15.0" />
+         </padding>
+
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane xmlns:fx="http://javafx.com/fxml/1" dividerPositions="0.18090452261306533" maxHeight="-Infinity" maxWidth="-Infinity"
+           minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="353.0"
+           prefWidth="494.0" xmlns="http://javafx.com/javafx/8.0.121"
+           fx:controller="at.ac.tuwien.sepm.assignment.groupphase.buscompany.ui.route.DisplayTimetableController">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="160.0">
+        <HBox layoutX="138.0" layoutY="-26.0" prefHeight="66.4" prefWidth="492.8"
+              style="-fx-background-color: #173937;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Label fx:id="labelFrom" prefHeight="30.0" prefWidth="110.0" text="Vienna" textFill="WHITE">
+                <HBox.margin>
+                    <Insets left="95.0" top="20.0"/>
+                </HBox.margin>
+                <font>
+                    <Font size="20.0"/>
+                </font>
+            </Label>
+            <Label fx:id="labelTo" prefHeight="30.0" prefWidth="108.0" text="Berlin" textFill="WHITE">
+                <font>
+                    <Font size="20.0"/>
+                </font>
+                <HBox.margin>
+                    <Insets left="130.0" top="20.0"/>
+                </HBox.margin>
+            </Label>
+        </HBox>
+    </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="293.0" prefWidth="493.0">
+        <TableView fx:id="tableTimetable" layoutX="122.0" layoutY="14.0" prefHeight="313.0" prefWidth="493.0"
+                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="columnDeparture" prefWidth="153.0" text="Departure"/>
+                <TableColumn fx:id="columnArrival" prefWidth="175.0" text="Arrival"/>
+                <TableColumn fx:id="columnPrice" prefWidth="163.0" text="Price"/>
+            </columns>
+        </TableView>
+    </AnchorPane>
+</SplitPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" id="rootFare" fx:id="root" prefHeight="600.0" prefWidth="800.0" stylesheets="@/style/sepm.css" xmlns="http://javafx.com/javafx/8.0.121" fx:controller="at.ac.tuwien.sepm.assignment.groupphase.buscompany.ui.booking.FareFinderChartController">
+
+    <bottom>
+        <HBox id="fareBottom" fx:id="bottom" alignment="CENTER_RIGHT" spacing="20">
+            <Button fx:id="btnReturn" onAction="#onReturn" styleClass="fareButton">Add return</Button>
+            <Button onAction="#onBack" styleClass="fareButton">Back</Button>
+            <Button onAction="#onBook" styleClass="fareButton">Book</Button>
+            <BorderPane.margin>
+                <Insets bottom="20.0" right="30.0" />
+            </BorderPane.margin>
+        </HBox>
+    </bottom>
+</BorderPane>

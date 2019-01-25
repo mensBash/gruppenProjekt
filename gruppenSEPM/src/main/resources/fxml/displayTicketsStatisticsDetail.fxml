@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.18090452261306533" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="353.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.tuwien.sepm.assignment.groupphase.buscompany.ui.DisplayTicketsStatisticsController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="160.0">
+            <children>
+                <HBox layoutX="138.0" layoutY="-26.0" prefHeight="66.4" prefWidth="492.8" style="-fx-background-color: #173937;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="47.0" prefWidth="180.0" text="Sold Tickets " textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="160.0" top="6.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+                </HBox>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="293.0" prefWidth="493.0">
+            <children>
+                <TableView fx:id="tableTicketStatistics" layoutX="122.0" layoutY="14.0" prefHeight="313.0" prefWidth="493.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="columnStartDestination" prefWidth="135.0" text="Start Destination" />
+                        <TableColumn fx:id="columnEndDestination" prefWidth="135.0" text="End Destination" />
+                        <TableColumn fx:id="columnOutward" prefWidth="112.0" text="Outward" />
+                  <TableColumn fx:id="columnReturn" prefWidth="112.0" text="Return" />
+                    </columns>
+                </TableView>
+            </children></AnchorPane>
+    </items>
+</SplitPane>
